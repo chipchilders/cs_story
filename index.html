@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Our Journey to CloudStack</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step slide" data-x="-1500" data-y="-700">
+        <q align="center" valign="middle"><span class="header">&nbsp;<br>&nbsp;<br>Our Journey to Adopt<br>&nbsp;<br> Apache CloudStack</span></q>
+    </div>
+
+    <div class="step slide" data-x="-1500" data-y="100">
+        <q><span class="header">2010 - We Got Started</span>
+            <p>Four options for building a cloud orchestration layer:</p>
+            <ul>
+                <li>"The Big IT Software Guys"</li>
+                <li>"Cloud in a Box" Commercial Software</li>
+                <li>Open Source Options</li>
+                <li>Roll Our Own</li>
+            </ul>
+            &nbsp;<br>
+            <p><em>We rolled our own and launched a BETA service.</em></p>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="-1500" data-y="900">
+        <q><span class="header">2011 - Growing and Maturing</span>
+            <ul>
+                <li>The service went GA</li>
+                <li>Development continued on our own orchestration framework</li>
+                <li>Multiple cloud regions brought online and capacity started growing</li>
+                <li>New feature development focused on "higher level" services <strong>&lt;- This is where we want to spend our time!</strong></li>
+            </ul>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="-1500" data-y="1700">
+        <q><span class="header">2012 - The IaaS Software World Heats Up</span>
+            <ul>
+                <li>OSS IaaS projects had started maturing rapidly</li>
+                <li>Licenses started to change</li>
+                <li>Alliances were formed</li>
+                <li>Foundations are being created</li>
+            </ul>
+            &nbsp;<br>
+            <p><em>We needed to step back a bit and assess some options...</em></p>
+        </q>
+    </div>
+
+    <div class="step" id="big" data-x="2000" data-y="-700" data-scale="3">
+        <p>
+        <em>So we decided to try out a few options!</em>
+        <br>&nbsp;<br>
+        <strong>"Stack Wars"</strong>
+        <br>OpenStack / CloudStack / OpenNebula
+        </p>
+    </div>
+
+    <div class="step" data-x="0" data-y="900">
+        So we got ourselves a rack of gear: <img src="cs_lab_front.jpg">
+    </div>
+    <div class="step" data-x="-342" data-y="940" data-z="-10" data-rotate-y="-180">
+        &nbsp;<br><img src="cs_lab_back.jpg">
+        <br>And plugged some stuff in...
+    </div>
+
+    <div class="step" data-x="1000" data-y="900">
+        <strong>And then we tested some stacks...</strong>
+        <ul>
+            <li>Installed, configured and tested each option</li>
+            <li>Reviewed the state of each project (community activity, governance, licensing, etc...)</li>
+            <li>Dug into the code itself</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="2000" data-y="900">
+        <strong>OpenStack (Diablo Release)</strong>
+        <ul>
+            <li>Apache 2</li>
+            <li>Similar Architecture / Language to Us <br>(Python, AMQP, Highly Distributed)</li>
+            <li>"Building Block" Style</li>
+            <li>Tested some commercial distros</li>
+            <li>Governance model remained unknown (headed towards OS Foundation)</li>
+            <li>Clearly still maturing (quality / features / operational experience)</li>
+        </ul>
+    </div>
+
+    <div class="step" data-x="3000" data-y="900">
+        <strong>OpenNebula</strong>
+        <ul>
+            <li>Apache 2</li>
+            <li>C++ / Ruby</li>
+            <li>VMware support was challenging to configure</li>
+            <li>Governance managed by C12G Labs</li>
+            <li>Really liked the concept of growing into EC2</li>
+        </ul>
+    </div> 
+
+    <div class="step" data-x="4000" data-y="900">
+        <strong>CloudStack</strong>
+        <ul>
+            <li style="color: red">GPL</li>
+            <li>Java / Python</li>
+            <li style="color: red">Governance managed by Citrix</li>
+            <li>Installation and configuration was very easy</li>
+            <li>Code / feature quality was high</li>
+            <li>Service Providers using it in Production</li>
+        </ul>
+    </div> 
+
+    <div class="step" data-x="4000" data-y="2000" data-rotate="90">
+        <strong>Then Citrix gave CloudStack to the Apache Software Foundation...</strong>
+        <br>
+        <em>This change made a huge difference for us.</em>
+    </div>
+
+    <div class="step" data-x="3500" data-y="2000" data-rotate="90">
+        <strong>So what are we doing with CloudStack now?</strong>
+    </div>
+
+    <div class="step" data-x="3000" data-y="2000" data-rotate="90">
+        We'll have our first CloudStack-based service in production by the end of the year.
+    </div>
+
+    <div class="step" data-x="2500" data-y="2000" data-rotate="90">
+        We've started planning what features we can contribute to CloudStack:<br>
+        &nbsp;<br>
+        Likely focused on Disaster Recovery and Managed Services.
+    </div>
+
+    <div class="step" data-x="2000" data-y="2000" data-rotate="90">
+        We're hosting events like this.
+    </div>
+
+    <div class="step" data-x="1500" data-y="2000" data-rotate="90">
+        It's been kind of fun...
+    </div>
+
+    <div class="step" data-x="1000" data-y="2000" data-rotate="90">
+        You should check it out too:<br>
+        <a target="_blank" href="http://cloudstack.org">cloudstack.org</a>
+    </div>
+    
+    <div id="overview" class="step" data-x="2000" data-y="500" data-scale="8">
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
+
+
